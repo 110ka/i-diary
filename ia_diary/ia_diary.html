@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ia日記</title>
+        <meta name="description" content="プログラミング学習45日間チャレンジ実施中。社会人3年目で適応障害になった私の日々の成長を綴るブログ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--リセットCSS-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="style0110.css" rel="stylesheet">
+
+        <!--Googleフォント-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&family=M+PLUS+Rounded+1c:wght@700&family=Teko:wght@300..700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+
+        <!--オリジナルCSS-->
+        <link rel="stylesheet" herf="style0110.css">
+    </head>
+    <body>
+        <!--ヘッダー-->
+        <header class="page-header">
+            <div class="highlight">
+             <h1 class="align-center">ia日記</h1>
+            </div>
+            <nav>
+                <div class="container font-english">
+                    <ul class="main-nav">
+                        <li class="item select"><a href="#">BLOG</a></li>
+                        <li class="item select"><a href="#">PROFILE</a></li>
+                        <li class="item select"><a href="#">CONTACT</a></li>
+                </div>
+
+            </nav>
+
+        </header>
+
+    <!--メイン画像-->
+        <div class="first_mainphoto">
+            <div class="center-container">
+                <img class=align-center src="images/home/first_mainphoto/viktor-forgacs-WZT4YzbXiMk-unsplash.jpg" alt="空と階段のトップ写真">
+            </div>
+        </div>
+
+        <!--トップメッセージ-->
+        <section id="topmessage">
+            <div class="container">
+                <div class="item"><a href="https://note.com/ia_45days"><img class=notelogo src="images/home/logo.svg" alt="noteロゴ"></a></div>
+                <div class="item"><a href="https://note.com/ia_45days"><h2>で45日間のプログラミング学習記公開中 ▷　check it out!</h2></a></div>
+                </div>
+            </div>
+        </section>
+
+        <!--日付表示-->
+        <section id="day">
+
+            <div id="date">ここに日付が表示されます</div>
+          
+            <script>
+              // 今日の日付を取得して表示
+              const today = new Date();
+              const formattedDate = `${today.getFullYear()}年${today.getMonth() + 1}月${today.getDate()}日`;
+              document.getElementById('date').textContent = formattedDate;
+            </script>
+
+            <div class="container teko-highlight">
+                <div class="day-item"><p>DAY</p></div>
+                <div class="day-item"><div id="countup">ここに経過日数が表示されます</div></div>
+                <div class="day-item"><p>/45days</p></div>
+            </div>
+
+            
+            
+          
+            <script>
+              // 開始日を設定（例: 2025年1月1日）
+              const startDate = new Date("2025-01-01");
+          
+              // 今日の日付を取得
+              const todayForCountup = new Date();
+          
+              // 経過日数を計算（ミリ秒単位で計算後、日数に変換）
+              const elapsedMilliseconds = todayForCountup - startDate;
+              const elapsedDays = Math.floor(elapsedMilliseconds / (1000 * 60 * 60 * 24));
+          
+              // 表示
+              const countupElement = document.getElementById("countup");
+              countupElement.textContent = `${elapsedDays}`;
+            </script>
+ 
+        </section>
+
+        <!--サイト説明-->
+        <section id="about">
+            <div class="container">
+             <div class="item"><img class="mention_icon" src="images/home/mention_icon/nu01477.png"></div>
+
+             <div class="item"></div><p>このwebページは、<br>
+                プログラミング初心者が知識ゼロから作り始めました。<br>
+                日々、学んだ知識を使って更新します。いわば<br><span class="highlight">成長するwebサイトです。</span><br>
+                その様子をnoteのブログ記事と共に、45日間お楽しみください。
+             </p></div>
+           </div>
+
+        </section>
+
+         <!--ブログ記事-->
+        <section id="blog">
+            <h3>BLOG</h3>
+            <div class="container">
+                <div class="item"><a href="https://note.com/ia_45days/n/nb516d6220aa1"><img src="images/blog/DAY0745.png" class="resize-image" alt="7日目サムネイル" /></a></div>
+                <div class="item"><a href="https://note.com/ia_45days/n/ne662de8f7050"><img src="images/blog/DAY0645.png" class="resize-image" alt="6日目サムネイル" /></a></div>
+                <div class="item"><a href="https://note.com/ia_45days/n/na81a80f6a084"><img src="images/blog/DAY0545.png" class="resize-image" alt="5日目サムネイル" /></a></div>
+            </div>
+            
+            <div class="more">
+            <a href="https://note.com/ia_45days">もっとみる…</a>
+            </div>
+        </section>
+
+         <!--プロフィール-->
+         <section id="profile">
+            <h3>PROFILE</h3>
+            <div class="pro-container">
+                <div class="pro-item flex-container">
+                    <img class=myicon src="images/profile/IMG_4956.png" alt="iaプロフィール写真">
+                    <h4>ia</h4>
+                </div>
+                <div class="pro-item">
+                    <p>2020年に大学卒業後、東京の広告制作会社に入社。<br>
+                        多忙と新型コロナウィルス感染後の後遺症で適応障害を発症し、退職。<br>
+                        その後も半年ほど都内で働いていたものの、自然の癒しを求めてリゾートバイトをスタートする。<br>
+                        元々はプログラミングに全く興味がなかったものの、<br>シェアハウス時代の友人にAIを用いたプログラミング学習を進められ、副業を目的に始めた。</p>
+            
+                         <div class="SNSicon container">
+                            <div class="icon"><a href="https://note.com/ia_45days"><img src="images/profile/note_icon.png" alt="noteロゴ"></a></div>
+                            <div class="icon"><a href="#"><img src="images/profile/insta_logo.png" alt="instagramロゴ"></a></div>
+                            <div class="icon"><a href="#"><img src="images/profile/x_logo.png" alt="Xロゴ"></a></div>
+                         </div> 
+                </div>
+            </div>
+         
+         </section>
+         
+            
+
+
+
+        <footer id="page-footer">
+
+        </footer>
+    </body>
+</html>
+ 
